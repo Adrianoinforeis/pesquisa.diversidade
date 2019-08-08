@@ -1,0 +1,138 @@
+:root {
+    --main-grey: #9E9E9E;
+  }
+
+#participando .vh {
+
+    height: 100vh;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+    #participando .vh {
+
+        height: auto;
+
+    }
+    
+    #participando .bloco-total{
+        margin-top: 0px;
+    }
+
+
+
+}
+
+
+
+.status-bloco-cancelar {
+
+    position: absolute;
+
+    top: 5px;
+
+    right: 0;
+
+    left: 0;
+
+    text-align: center;
+
+}
+
+
+
+.status-bloco-cancelar span {
+
+    background-color: #E74C3C;
+
+    padding: 7px 23px 7px 23px;
+
+    color: white;
+
+    border-top-left-radius: 5px;
+
+    border-top-right-radius: 5px;
+
+    font-size: 12px;
+
+}
+
+.status-bloco-cancelar button{
+    border: none;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+
+
+.participando-pronto {
+
+    background-color: #2ECC71;
+
+    padding: 25px;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+
+.participando-pronto h4 {
+
+    font-weight: 400;
+
+    margin: 0px;
+
+}
+
+
+
+.participando-espera {
+
+    background-color: #FFDE70;
+
+    padding: 25px;
+
+    color: #6E5A1A;
+
+    text-align: center;
+
+}
+
+
+
+.participando-espera h4 {
+
+    font-weight: 400;
+
+    margin: 0px;
+
+}
+.participando-desabilitado {
+
+    background-color: #9E9E9E;
+
+    padding: 25px;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+
+.participando-desabilitado  h4 {
+
+    font-weight: 400;
+
+    margin: 0px;
+
+}

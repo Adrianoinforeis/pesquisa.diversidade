@@ -1,0 +1,103 @@
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #888;
+    max-width: 300px;
+    text-align: right;
+}
+
+.conteudo-texto-modal{
+    text-align: center;
+}
+
+/* The Close Button */
+.modal .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo-texto-modal h1{
+    margin-bottom: 30px;
+}
+
+.conteudo-texto-modal h1:hover{
+    color: #212529;
+}
+
+.btn-sim{
+    margin-right: 20px;
+}
+
+.btn-nao{
+    padding: 13px 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    border: 1px solid #E74C3C;
+    background-color: rgb(88, 146, 100);
+    cursor: pointer;
+}
+
+.btn-nao:hover{
+    padding: 13px 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    border: 1px solid #E86658;
+    background-color: rgb(88, 146, 100);
+    cursor: pointer;
+}
+
+.btn-sim{
+    padding: 13px 35px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(88, 146, 100);
+    border: 1px solid #E74C3C;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-sim:hover{
+    padding: 13px 35px;
+    border-radius: 5px;
+    border: none;
+    color: #E86658;
+    border: 1px solid #E86658;
+    background-color: white;
+    cursor: pointer;
+}

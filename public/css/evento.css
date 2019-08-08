@@ -1,0 +1,206 @@
+/* ---------------------------//
+------// EVENTO TOPO//------
+//--------------------------- */
+
+#evento-topo .btn-voltar i{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    padding: 0px;
+    border-radius: 0px;
+    margin-right: 0px;
+}
+
+
+#evento-topo h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#evento-topo .descricao-evento-dentro i {
+    font-size: 24px;
+    background-color: #E74C3C;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#evento-topo .localidade i{
+    padding: 10px 13px;
+}
+
+.titulo-evento {
+    margin-top: 15px;
+}
+
+.imagem-evento-dentro {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, .08);
+}
+
+.imagem-evento-dentro img{
+    width: 100%;
+}
+
+.evento-informacoes {
+    margin-top: 10px;
+}
+
+.horario-inicia,
+.horario-termina,
+.localidade {
+    display: flex;
+    flex-direction: row;
+}
+
+.descricao-evento-dentro{
+    margin-top: 15px;
+}
+
+.localidade h4, .horario h4{
+    margin: 0px;
+}
+
+.localidade h6, .horario h6{
+    margin-bottom: 5px;
+}
+
+.horario-inicia, .horario-termina, .localidade{
+    margin-bottom: 20px;
+}
+
+.btn-voltar a{
+    color: white;
+}
+
+.btn-voltar a:hover{
+    color: white;
+}
+
+/* ---------------------------//
+------// EVENTO BOTÃO//------
+//--------------------------- */
+
+.botao-participar{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.btn-participar{
+    padding: 13px 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 7px rgba(46,204,113,.5);
+    background-color: #2ECC71;
+    cursor: pointer;
+    transition: background-color .25s, box-shadow .25s;
+}
+.btn-participar:hover{
+    box-shadow: 0px 0px 14px rgba(46,204,113,.5);
+    background-color: #23BE64;
+}
+
+/* ---------------------------//
+------// EVENTO SEPARADOR//------
+//--------------------------- */
+
+#separador{
+    background-color: white;
+}
+
+.img-separador{
+    background-position: center;
+
+}
+
+/* ---------------------------//
+------// EVENTO CONTEUDO//------
+//--------------------------- */
+
+#evento-conteudo{
+    background-color: white;
+}
+
+.botoes-evento-dentro .agenda i{
+    font-size: 15px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #E74C3C;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(36, 37, 38, .16);
+    transition: background-color .25s, color .25s, box-shadow .25s;
+}
+.botoes-evento-dentro .agenda i:hover{
+    background-color: #E74C3C;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 12px 20px rgba(36, 37, 38, .13);
+}
+.bloco-horario-gradiente{
+    background-image: linear-gradient(45deg, #E74C3C, #FF416C);
+    border-radius: 5px;
+}
+.bloco-horario-dentro-texto{
+    padding: 30px 0;
+}
+.evento-conteudo-dia h3, .evento-conteudo-horario h4{
+    display: inline-block;
+}
+.evento-conteudo-dia, .evento-conteudo-horario{
+    color: white;
+    text-align: center;
+}
+body .span-horario, body .span-dia {
+    color: white;
+}
+.descricao-evento{
+    padding: 10px 0 60px 0;
+}
+.evento-conteudo-descricao{
+    padding: 20px 0 20px 5px;
+}
+.evento-conteudo-descricao-texto h3{
+    color: #5A5A5A;
+    margin-top: 20px;
+}
+/* ---------------------------//
+------// EVENTO COMPARTILHAR//------
+//--------------------------- */
+.compartilhar{
+    display: inline-block;
+    position: relative;
+
+}
+
+.compartilhar-redes{
+    position: relative;
+    right: 55px;
+    top: 5px;
+
+}
+.redes{
+    text-align: center;
+    z-index: 9999;
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(36, 37, 38, .16);
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    transition: background-color .25s, color .25s, box-shadow .25s;
+}
+
+.redes:hover{
+    box-shadow: 5px 12px 20px rgba(36, 37, 38, .13);
+}
+
+body .agenda .active{
+    background-color: #E74C3C;
+    color: white;
+}
+

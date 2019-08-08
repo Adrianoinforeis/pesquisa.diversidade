@@ -1,0 +1,427 @@
+:root {
+    --light-navy: #84e9ac;
+    --light-teal: #1962a2;
+    --white-navy: #fff;
+    --black-navy: #000;
+    --battleship-grey: #687582;
+    --orangey-red: #ff3636;
+    --warm-grey: #9c9c9c;
+}
+
+body .margin-left {
+    margin-left: 90px;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+
+body h1,
+p {
+    color: var(--white-navy);
+}
+
+body h1 {
+    font-family: 'Lato', serif;
+    font-weight: 600;
+}
+
+body p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+nav img {
+    width: 147px;
+    padding: 30px 0px;
+}
+
+/* -------------------------------
+  //--- MENU LATERAL --- //
+------------------------------- */
+
+#overlay-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1;
+    opacity: .7;
+    display: none;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-nav i {
+    color: var(--white-navy);
+    font-size: 25px;
+    padding-right: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: var(--white-navy);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--light-teal);
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: var(--light-teal);
+    text-decoration: none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#corpo {
+    transition: all 0.3s;
+}
+
+/* -------------------------------
+  //--- IMAGEM DE FUNDO E CAMADA --- //
+------------------------------- */
+
+.corpo-bg-img,
+.corpo-bg-overlay,
+.corpo-bg-overlay:before {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.corpo-bg-overlay:before {
+    content: "";
+    background-image: linear-gradient(242deg, var(--light-navy), var(--light-teal));
+    opacity: .84;
+}
+
+.corpo-bg-img {    
+    background-image: url("/img/corpo_bg_img.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+/* -------------------------------
+  //--- LADO ESQUERDO --- //
+------------------------------- */
+
+.conteudo-principal {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0px 25px;
+}
+
+.conteudo-principal p {
+    margin-top: 30px;
+}
+
+.centralizar-texto {
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------
+  //--- LADO DIREITO --- //
+------------------------------- */
+
+.bloco-formulario {
+    background-color: var(--white-navy);
+    min-height: calc(100vh - 109px);
+    border-top-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+/* -------------------------------
+  //--- TITULO FORMULARIO --- //
+------------------------------- */
+
+.formulario-titulo h1 {
+    color: var(--light-teal);
+}
+
+/* -------------------------------
+  //--- FORMULARIO --- //
+------------------------------- */
+
+
+.formulario {
+    padding: 60px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+.formulario-flex {
+    margin: 0 auto;
+}
+
+.form-group {
+    border-radius: 10px;
+    border: solid 1px #c2c2c2;
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    border: none;
+    padding: 25px 20px 25px 20px;
+    height: auto;
+    display: block;
+    font-size: 20px;
+    color: var(--battleship-grey);
+    line-height: 24px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+input[type=submit] {
+    color: var(--white-navy);
+    padding: 20px 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(252deg, var(--light-navy), var(--light-teal));
+
+}
+
+.esqueceu-senha {
+    text-align: left;
+    display: flex;
+}
+
+/* -------------------------------
+  //--- BOTÃO --- //
+------------------------------- */
+
+.btn-entrar {
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* -------------------------------
+  //--- LINKS --- //
+------------------------------- */
+
+.formulario span a {
+    color: var(--orangey-red);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.formulario p {
+    color: var(--light-teal);
+    margin-top: 10px;
+}
+
+.formulario p a {
+    font-weight: 600;
+    color: var(--light-teal);
+}
+
+/* -------------------------------
+  //--- ESQUECEU A SENHA --- //
+------------------------------- */
+
+.formulario .instrucoes-esqueceu-senha {
+    color: var(--warm-grey);
+}
+
+/* ------------------------------------------
+  //--- ESCOLHA ENTRE ARTIGO E PESQUISA --- //
+-------------------------------------------- */
+
+/* LADO ESQUERDO */
+
+.bloco-escolha.artigo {
+    background-image: url("/img/Grupo_de_mascara5.png");
+    background-size: cover;
+}
+
+.artigo-flex {
+    margin: 0 auto;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.artigo-flex img {
+    margin-bottom: 30px;
+}
+
+.artigo-descricao p {
+    color: var(--white-navy);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+/* LADO DIREITO */
+
+.bloco-escolha {
+    background-color: var(--white-navy);
+    min-height: calc(100vh - 109px);
+    border-top-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.bloco-escolha.pesquisa {
+    border-top-left-radius: 0px;
+    background-image: url("/img/Grupo_de_mascara4.png");
+    background-size: cover;
+}
+
+.pesquisa-flex {
+    margin: 0 auto;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.pesquisa-flex img {
+    margin-bottom: 30px;
+}
+
+.pesquisa-titulo h1 {
+    color: var(--light-teal);
+}
+
+.pesquisa-descricao p {
+    color: var(--warm-grey);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* ------------------------------
+  //--- TEMPLATE FORMULARIO --- //
+-------------------------------- */
+
+.bloco-escolha.template {
+    background-color: var(--white-navy);
+    min-height: calc(100vh - 109px);
+    border-top-left-radius: 50px;
+    padding: 30px;
+    display: block;
+}
+
+.template-tamanho {
+    max-width: none;
+}
+
+.template form {
+    text-align: left;
+}
+
+
+/* -------------------------------
+  //--- RESPONSIVO --- //
+------------------------------- */
+
+@media (max-width: 576px) {
+
+    .conteudo-principal p {
+        display: none;
+    }
+
+    .conteudo-principal h1 {
+        margin-bottom: 30px;
+    }
+
+    body .margin-left {
+        margin-left: 15px;
+    }
+
+}
+
+/* -------------------------------
+  //--- RESTIRAR BG AZUL DO AUTOCOMPLETE DO GOOGLE --- //
+------------------------------- */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--battleship-grey) !important;
+}
+
+body .form-control:focus {
+    background-color: transparent;
+}

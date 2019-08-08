@@ -1,0 +1,32 @@
+#nenhum-evento .vh{
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #nenhum-evento .vh{
+        height: auto;
+    }
+    
+    body .nenhum-evento-conteudo-texto{
+        margin-top: 60px;
+    }
+
+}
+
+.nenhum-evento-conteudo{
+    text-align: center;
+}
+
+.nenhum-evento-conteudo-texto{
+    margin-top: 180px;
+}
+
+.nenhum-evento-conteudo-texto h1:hover{
+    color: #212529;
+}
+
+.nenhum-evento-conteudo-texto h2{
+    color: #C2C2C2;
+    font-weight: 400;
+}

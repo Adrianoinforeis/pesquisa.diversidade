@@ -1,0 +1,215 @@
+/* ---------------------------// 
+------// MEDIAQUERY //------
+//--------------------------- */
+
+
+@media screen and (max-width: 1200px) {
+    .margin {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+/* MENU LATERAL */
+
+@media screen and (max-width: 768px) {
+    
+    #eventro-dentro-perfil .bloco-total{
+        margin-top: 0px; 
+    }
+    
+    #perfil-home .row .width, #participando .row .width, #dados-pessoais .row .width, #nenhum-evento .row .width {
+        max-width: 100%;
+    }
+
+    #perfil-home .menu-conteudo, #participando .menu-conteudo, #nenhum-evento .menu-conteudo, #dados-pessoais .menu-conteudo {
+        margin-top: 0px;
+    }
+
+    #perfil-home .menu-unico, #participando .menu-unico, #nenhum-evento .menu-unico, #dados-pessoais .menu-unico {
+        margin-top: 0px;
+    }
+        
+    #perfil-home .bloco-total{
+        margin-left: 0px;
+    }
+
+    .menu-junto ul li h6 {
+        display: none;
+    }
+
+    .menu {
+        margin-bottom: 0px;
+    }
+
+    .menu-junto ul li {
+        float: left;
+        padding: 30px;
+        width: 25%;
+    }
+
+    .menu-junto ul li i {
+        float: left;
+        font-size: 20px;
+        padding-right: 0px;
+    }
+
+    .dentro .nav h6 {
+        padding-right: 10px;
+    }
+    
+    body .margin-b-30{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+/* ---------------------------// 
+------// FINAL MEDIAQUERY //------
+//--------------------------- */
+
+/* ---------------------------// 
+------// NAVEGACAO //------
+//--------------------------- */
+
+.dentro h6 {
+    font-weight: 500;
+}
+
+.dentro h6,
+.dentro span {
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: #1C1C24;
+}
+
+.dentro h6 {
+    padding-right: 20px;
+}
+
+/* ---------------------------// 
+------// FINAL NAVEGACAO //------
+//--------------------------- */
+
+#perfil-home .width, #participando .width, #nenhum-evento .width, #dados-pessoais .width {
+    max-width: 240px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li h6 {
+    display: inline;
+}
+
+.menu-conteudo {
+    margin-top: 50px;
+}
+
+.menu-unico {
+    margin-top: 25px;
+
+}
+
+.menu i {
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.menu h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu i,
+.menu h6 {
+    color: #FFB3B3;
+}
+
+.menu li:hover > a i,
+.menu li:hover > a h6 {
+    color: white;
+}
+
+.ativo > a h6,
+.ativo > a i {
+    color: white;
+}
+
+.status-evento, .status-evento-desabilitado {
+    position: relative;
+}
+
+.status-bloco, .status-bloco-desabilitado{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.status-bloco span {
+    background-color: #2ECC71;
+    padding: 7px 23px 7px 23px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0px 0px 7px rgba(46, 204, 113, .5);
+}
+
+.margin-30 {
+    margin-top: 30px;
+}
+
+.margin-b-30 {
+    margin-bottom: 30px;
+}
+
+.status-bloco-espera {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.status-bloco-espera span {
+    background-color: #FFDE70;
+    padding: 7px 23px 7px 23px;
+    color: #6E5A1A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0px 0px 7px rgba(255, 255, 112, .5);
+}
+
+.btn-voltar{
+    display: inline-block;
+    padding: 10px;
+    background-color: #E74C3C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .25s;
+}
+
+.btn-voltar:hover{
+    background-color: #E86658;
+}
+
+.btn-voltar h5{
+    margin: 0px;
+}
+
+body .no-margin{
+    margin: 0px;
+}

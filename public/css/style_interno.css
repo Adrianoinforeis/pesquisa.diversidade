@@ -1,0 +1,556 @@
+:root {
+    --main-grey: #9E9E9E;
+  }
+body {
+    background-color: #F7F7F7 !important;
+}
+
+
+/* ---------------------------// 
+------// HOVER //------
+//--------------------------- */
+
+body h1:hover {
+    color: #E74C3C;
+}
+
+.bloco:hover {
+    box-shadow: 5px 12px 20px rgba(36, 37, 38, .13);
+    cursor: pointer;
+}
+
+/* ---------------------------// 
+------// BTN //------
+//--------------------------- */
+
+body button:focus{
+    outline: 1px solid rgba(255,255,255,0);
+}
+
+/* ---------------------------// 
+------// PADDING //------
+//--------------------------- */
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-30 {
+    padding: 30px 0;
+}
+
+.padding-60 {
+    padding: 60px 0;
+}
+
+.padding-120 {
+    padding: 120px 0;
+}
+
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+
+.padding-bottom-60 {
+    padding-bottom: 60px;
+}
+
+.padding-bottom-120 {
+    padding-bottom: 120px;
+}
+
+/* ---------------------------// 
+------// FONTE //------
+//--------------------------- */
+
+body h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+body h5 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+body h4,
+body .span-horario {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+body h3,
+body .span-dia {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+body h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+body h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+body button {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* ---------------------------// 
+------// LINKS //------
+//--------------------------- */
+
+body a:link,
+body a:visited,
+body a:hover {
+    color: (internal value);
+    text-decoration: none;
+}
+
+/* ---------------------------// 
+------// MEDIAQUERY //------
+//--------------------------- */
+
+/*------// CONTEUDO //------*/
+
+@media screen and (max-width: 768px) {
+    #sobre .bloco-total {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #sobre .vertical-title-text {
+        transform: rotate(0deg);
+    }
+
+    #sobre .sidebar-title,
+    #sobre .absolute-text {
+        position: inherit;
+    }
+
+    body #sobre .vh,
+    body #perfil-home .vh {
+        height: auto;
+        min-height: auto;
+    }
+
+    .vertical-title-text h3 {
+        margin: 25px 0;
+    }
+
+    #sobre .vertical-title-text h3 {
+        font-size: 32px;
+    }
+
+    .bloco-total {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #sobre .bloco-total {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #sobre .bloco-total {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+
+/*------// MENU //------*/
+
+
+@media screen and (max-width: 768px) {
+    #navegacao .navegacao-barra {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #navegacao .navegacao-menu ul li {
+        padding: 0 5px;
+    }
+
+    #navegacao i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #navegacao .navegacao-menu ul li {
+        padding: 0 1px;
+    }
+
+    #navegacao i {
+        display: none;
+    }
+}
+
+
+
+
+/* ---------------------------// 
+------// NAVEGACAO //------
+//--------------------------- */
+
+#navegacao {
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, .08);
+}
+
+.navegacao-barra {
+    padding: 10px 45px;
+}
+
+body .navegacao-menu-15{
+    padding: 15px 0px;
+}
+
+.navegacao-menu {
+    padding: 20px 0px;
+    float: right;
+}
+
+.navegacao-menu ul li {
+    font-size: 15px;
+    padding: 0px 10px;
+    color: #404040;
+}
+
+.navegacao-menu ul li a {
+
+    border: 1px solid #E74C3C;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+#navegacao .menu-entrar a {
+    background-color: rgb(88, 146, 100);
+    color: white;
+}
+
+#navegacao .menu-entrar i {
+    color: white;
+}
+
+.navegacao-menu ul li:last-child {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 0px;
+
+}
+
+.navegacao-menu ul li a {
+    color: #404040;
+}
+
+.navegacao-menu i {
+    font-size: 12px;
+    padding-right: 5px;
+    color: #E74C3C;
+}
+
+.navegacao-logo img {
+    width: 150px;
+    margin-top: 8px;
+}
+
+/* ---------------------------// 
+------// CONTEUDO-SIDEBAR //------
+//--------------------------- */
+
+.sidebar-title {
+    background-color: rgb(105, 160, 116);
+    color: white;
+    position: relative;
+
+}
+
+#perfil-home .vh {
+    min-height: 100vh;
+}
+
+#sobre .vh {
+    min-height: 100vh;
+}
+
+
+.absolute-text {
+    position: absolute;
+    top: 200px;
+    right: -120px;
+    width: 330px;
+}
+
+.vertical-title-text {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.vertical-title-text h3 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+
+
+/* ---------------------------// 
+------// MINI-RELATORIO-BLOCOS //------
+//--------------------------- */
+
+
+.novo-evento-home{
+    border-radius: 5px;
+    background-color: #2ECC71;
+    color: white;
+    transition: box-shadow .25s;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.novo-evento-home:hover{
+    box-shadow: 0px 0px 15px rgba(46, 204, 113, 1);
+}
+
+.novo-evento-home h2{
+    line-height: 100px;
+}
+
+.panel {
+    border-left: 9px solid #E74C3C;
+    background-color: lightgrey;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, .08);
+    transition: box-shadow .25s ease, transform 0.25s ease;
+}
+
+.panel:hover {
+    box-shadow: 5px 12px 20px rgba(36, 37, 38, .13);    
+}
+
+
+@media screen and (max-width: 768px) {
+    .evento-home {
+        padding: 10px 0px;
+    }
+}
+
+.count marquee{
+    font-size: 32px;
+    color: #19212A;
+}
+.panel:hover marquee{    
+    color: #E74C3C;
+}
+
+/* ---------------------------// 
+------// CONTEUDO-BLOCOS //------
+//--------------------------- */
+
+.nao-imprime .bloco-total {
+    margin: 0px;
+}
+
+.bloco-total {
+
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.bloco {
+    border-radius: 5px;
+    box-shadow: 0 6px 15px rgba(36, 37, 38, .08);
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    transition: box-shadow .25s ease, transform 0.25s ease;
+    margin-top: 30px;
+
+}
+
+.dia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #E74C3C;
+    padding: 10px;
+    line-height: 19px;
+    border-bottom-right-radius: 5px;
+}
+
+.dia span {
+    color: white;
+}
+
+.dia h1 {
+    color: white;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.dia h1:hover {
+    color: white;
+}
+
+.dia h1:hover {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.editar{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    box-shadow: 0px 0px 30px rgba(28,28,36,.3);
+    background-color: white;
+    top: 0;
+    border-radius: 5px;
+    right: 0;
+    margin: 10px;
+    line-height: 19px;
+    transition: visibility 0s, opacity .25s ease;
+}
+
+.bloco:hover .editar{
+    visibility: visible;
+    opacity: 1;
+}
+
+.editar i{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(28,28,36);
+}
+
+.conteudo-bloco {
+    padding: 25px;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+span i {
+    color: #E74C3C;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.conteudo-texto h1 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: #19212A;
+    margin: 0px;
+    line-height: 25px;
+    min-height: 60px;
+}
+
+.conteudo-texto h2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+    color: #474747;
+    margin: 0px;
+    line-height: 20px;
+}
+
+
+.relatorio {
+    padding: 25px;
+}
+
+.relatorio h1:hover {
+    color: #212529;
+}
+
+.eventos {
+    padding: 25px;
+}
+
+
+
+
+/*LABEL DESABILITADO
+---------------------------
+*/
+
+
+
+.status-bloco-desabilitado span {
+    background-color: var(--main-grey);
+    padding: 7px 23px 7px 23px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+}
+
+.bg-grey{
+    background: var(--main-grey);;
+}
+.color-grey{
+    color: var(--main-grey);
+}
+/*
+---------------------
+<!-- CAMADA CINZA -->
+---------------------
+*/
+.evento-desabilitado{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 9999;
+}
+/*
+-------------------------
+<!-- BOTAO FINALIZADO -->
+-------------------------
+*/
+.botao-finalizado{
+    text-align: right;
+    margin-top: 10px;
+}
+
+.btn-finalizado{
+    padding: 13px 35px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #9E9E9E;
+    cursor: auto;    
+    transition: background-color .25s, box-shadow .25s;
+}
+
+.btn-finalizado:focus{
+    outline: none;
+}
+
+
+
